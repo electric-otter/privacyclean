@@ -1,7 +1,13 @@
 import os
+os.system("pip install __future__")
+os.system("pip install os")
 os.system("pip install ipaddress")
-os.system("")
+from __future__ import division
+from __future__ import print_function
+from __future__ import unicode_literals
+import re
 import ipaddress
+
 # initialize an IPv4 Address
 ip = ipaddress.IPv4Address("192.168.0.1")
 # print True if the IP address is global
@@ -69,12 +75,6 @@ Note that only #else and #endif lines are annotated.  Existing comments
 on those lines are removed.
 """
 
-# Future imports for Python 2.7, mandatory in 3.0
-from __future__ import division
-from __future__ import print_function
-from __future__ import unicode_literals
-
-import re
 
 # Any block with fewer than this many lines does not need annotations.
 LINE_OBVIOUSNESS_LIMIT = 4
