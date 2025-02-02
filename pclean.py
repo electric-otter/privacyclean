@@ -1,20 +1,17 @@
-from __future__ import division
-from __future__ import print_function
-from __future__ import unicode_literals
+from __future__ import division, print_function, unicode_literals
 import os
-os.system("pip install __future__")
-os.system("pip install os")
-os.system("pip install ipaddress")
 import re
 import ipaddress
 
 # initialize an IPv4 Address
 ip = ipaddress.IPv4Address("192.168.0.1")
+
 # print True if the IP address is global
 print("Is global:", ip.is_global)
 
 # print True if the IP address is Link-local
 print("Is link-local:", ip.is_link_local)
+
 #  You would need to use Tor code. Here, i would say it uses BSD licensing.
 #!/usr/bin/env python
 # Copyright (c) 2017-2019, The Tor Project, Inc.
